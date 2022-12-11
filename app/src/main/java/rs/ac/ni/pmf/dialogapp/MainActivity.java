@@ -31,4 +31,9 @@ public class MainActivity extends AppCompatActivity implements MyDialog.MyDialog
         Toast.makeText(this, "Klinuo NE", Toast.LENGTH_SHORT).show();
         Log.i("DIALOGAPPTAG", "KLIKNUO NE");
     }
+
+    public void showListDialog(View view) {
+        final MultiChoiceDialog mydialog = new MultiChoiceDialog();
+        mydialog.show(getSupportFragmentManager(), "DIALOGAPPTAG");
+    }
 }

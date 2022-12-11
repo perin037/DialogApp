@@ -7,13 +7,25 @@
     tools:context=".MainActivity">
 
     <Button
+        android:id="@+id/dlgbutton2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginTop="16dp"
+        android:onClick="showDialog"
+        android:text="Show dialog"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dlgbutton" />
+
+    <Button
         android:id="@+id/dlgbutton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:text="Show dialog"
+        android:text="Show list dialog"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:onClick="showDialog"/>
+        android:onClick="showListDialog"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
